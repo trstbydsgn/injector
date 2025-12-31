@@ -1,0 +1,16 @@
+json{
+  "patterns": [
+    {
+      "name": "Role Manipulation",
+      "pattern": "(?:ignore|disregard|forget).*(?:previous|above|prior|earlier|system).*(?:instructions?|prompts?|rules?|directives?)",
+      "weight": 0.9,
+      "flags": "gi"
+    },
+    {
+      "name": "System Override",
+      "pattern": "(?:you are now|act as|pretend to be|simulate).*(?:DAN|evil|unfiltered|unrestricted)",
+      "weight": 0.95,
+      "flags": "gi"
+    }
+  ]
+}
